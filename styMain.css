@@ -20,7 +20,7 @@ h1 {
 .header {
     background-color: #039BE5;
     width: 100%;
-    height: 20%;
+    height: 8%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     position: relative;
     margin: 0;
@@ -30,22 +30,30 @@ h1 {
 }
 
 .content-card {
-    width: 70%;
+    width: 50%;
     background-color: #455A64;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     margin: auto;
+    margin-top: 10px;
     padding: 10px;
+}
+
+.content-card a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
 }
 
 .menu {
     margin: auto;
+    position: absolute;
+    bottom: 0;
 }
 
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #039BE5;
     overflow: hidden;
 }
 
@@ -59,5 +67,9 @@ h1 {
     padding: 8px;
     text-decoration: none;
     color: white;
+    font-size: 1.5em;
+}
 
+.menu a:active, a:hover {
+    border-bottom: 3px solid white;
 }
