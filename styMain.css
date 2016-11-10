@@ -36,6 +36,7 @@ h1 {
     margin: auto;
     margin-top: 10px;
     padding: 10px;
+    border-radius: 2px;
 }
 
 .content-card a {
