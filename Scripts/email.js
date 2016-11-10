@@ -1,0 +1,1 @@
+﻿window.open('mailto:tbell.swd@gmail.com');
