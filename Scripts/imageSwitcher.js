@@ -14,4 +14,4 @@ var autoSlide = setInterval(function () {
         currentIndex = 0;
     }
     cycleItems();
-}, 3000);
+}, 300);

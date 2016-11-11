@@ -27,6 +27,9 @@ h1 {
     padding: 0;
     top: 0;
     vertical-align: top;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .content-card {
@@ -34,8 +37,7 @@ h1 {
     background-color: #455A64;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     margin: auto;
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 30px;
     border-radius: 2px;
 }
 
@@ -45,10 +47,27 @@ h1 {
     font-size: 1.5em;
 }
 
+.content-card img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    border-radius: 2px;
+}
+
+.text-content {
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
 .menu {
     margin: auto;
     position: absolute;
     bottom: 0;
+    padding-bottom: 3px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .menu ul {
@@ -73,4 +92,27 @@ h1 {
 
 .menu a:active, a:hover {
     border-bottom: 3px solid white;
+}
+
+ .container {
+    max-width: 400px;
+    background-color: transparent;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.container div {
+    background-color: transparent;
+    width: 100%;
+    display: inline-block;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 640px){
+
 }
