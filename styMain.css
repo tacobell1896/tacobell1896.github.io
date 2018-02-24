@@ -64,7 +64,7 @@ h1 {
 .menu {
     margin: auto;
     position: absolute;
-    /*bottom: 0; */
+    bottom: 0;
     padding-bottom: 3px;
     height: 40%
 }
