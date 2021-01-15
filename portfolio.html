@@ -4,6 +4,7 @@
 	<title>Turner Bell</title>
 	<link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" href="styles/portfolio.css" />
     <script src="https://code.jquery.com/jquery-3.1.0.slim.js"></script>
 </head>
 <body>
@@ -37,32 +38,41 @@
 	<main>
 
 		<figure>
-			<img src="images/portfolio.png" > 
-		<!--
-			<div class="slideshow-container"> 
-				<div class="mySlides fade">
-				  <div class="numbertext">1 / 3</div>
-				  <img src="img1.jpg" style="width:100%">
-				  <div class="text">Caption Text</div>
+		<!--	<img src="images/portfolio.png" >-->
+			<div class="row">
+				<div class="column">
+					<img src="#" onclick="myFunction(this);">
+				</div> 
+				<div class="column">
+					<img src="#" onclick="myFunction(this);">
+				</div> 
+				<div class="column">
+					<img src="#" onclick="myFunction(this);">
+				</div> 
+				<div class="column">
+					<img src="#" onclick="myFunction(this);">
+				</div> 
+				<div class="column">
+					<img src="#" onclick="myFunction(this);">
+				</div> 
+				<div class="column">
+					<img src="#" onclick="myFunction(this);">
 				</div>
-			  
-				<div class="mySlides fade">
-				  <div class="numbertext">2 / 3</div>
-				  <img src="img2.jpg" style="width:100%">
-				  <div class="text">Caption Two</div>
-				</div>
-			  
-				<div class="mySlides fade">
-				  <div class="numbertext">3 / 3</div>
-				  <img src="img3.jpg" style="width:100%">
-				  <div class="text">Caption Three</div>
-				</div>
-			  
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			  </div>
-		
-		-->
+			</div>
+
+			<div class="container">
+				<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+				<img id="expandedImg" style="width:100%">
+				<div id="imgText"></div>
+			</div>
+			<script>
+				function myFunction(imgs)	{
+					var expandImg = document.getElementById("expandedImg");
+					var imgText = document.getElementById("imgText");
+					expandImg.src = imgs.alt;
+					expandImg.parentElement.style.display = "block";
+				}
+			</script> 
 		</figure>
 
 		<article>
