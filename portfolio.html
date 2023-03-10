@@ -1,92 +1,91 @@
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Turner Bell</title>
-	<link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-	<link rel="stylesheet" href="styles/portfolio.css" />
-    <script src="https://code.jquery.com/jquery-3.1.0.slim.js"></script>
-</head>
-<body>
-	<header>
-		<div class="container">
-		    <div class="img1" style="display: inline-block">
-			<img src="images\DARK\logo-transparent.png">
-		    </div>
-		    <div class="img2" style="display: none">
-			<img src="images\DARK\logo-transparent-2.png">
-		    </div>
-		</div>
-		<nav>
-			<ul>
-				<li>
-				    <a href="index.html">Home</a>
-				</li>
-				<li>
-				    <a href="achievements.html">Achievements</a>
-				</li>
-				<li>
-				    <a href="links.html">Links</a>
-				</li>
-				<li>
-				    <a href="portfolio.html">Portfolio</a>
-				</li>
-			    </ul>
-		</nav>          
-        <script src="Scripts/imageSwitcher.js"></script>
-	</header>
-	<main>
-
-		<figure>
-		<!--	<img src="images/portfolio.png" >-->
-			<div class="row">
-				<div class="column">
-					<img src="#" onclick="myFunction(this);">
-				</div> 
-				<div class="column">
-					<img src="#" onclick="myFunction(this);">
-				</div> 
-				<div class="column">
-					<img src="#" onclick="myFunction(this);">
-				</div> 
-				<div class="column">
-					<img src="#" onclick="myFunction(this);">
-				</div> 
-				<div class="column">
-					<img src="#" onclick="myFunction(this);">
-				</div> 
-				<div class="column">
-					<img src="#" onclick="myFunction(this);">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Turner Bell</title>
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<script src="https://code.jquery.com/jquery-3.1.0.slim.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="img1" style="display: inline-block">
+				<img src="images\DARK\logo-transparent.png">
+				</div>
+				<div class="img2" style="display: none">
+				<img src="images\DARK\logo-transparent-2.png">
 				</div>
 			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="achievements.html">Achievements</a>
+					</li>
+					<li>
+						<a href="links.html">Links</a>
+					</li>
+					<li>
+						<a href="portfolio.html">Portfolio</a>
+					</li>
+					</ul>
+			</nav>          
+			<script src="Scripts/imageSwitcher.js"></script>
+		</header>
+			<main>
+							<!--<p>The above gallery shows some of the websites that I have designed as part of my time as domain services leader at ActivPC Technology Services. Please note that most of these utilize the WordPress Content Management System.</p>-->
+			<!-- <figure>
+				<img src="images/portfolio.png" >
+				<div class="row">
+					<div class="column">
+						<img src="#" onclick="myFunction(this);">
+					</div> 
+					<div class="column">
+						<img src="#" onclick="myFunction(this);">
+					</div> 
+					<div class="column">
+						<img src="#" onclick="myFunction(this);">
+					</div> 
+					<div class="column">
+						<img src="#" onclick="myFunction(this);">
+					</div> 
+					<div class="column">
+						<img src="#" onclick="myFunction(this);">
+					</div> 
+					<div class="column">
+						<img src="#" onclick="myFunction(this);">
+					</div>
+				</div>
 
-			<div class="container">
-				<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-				<img id="expandedImg" style="width:100%">
-				<div id="imgText"></div>
-			</div>
-			<script>
-				function myFunction(imgs)	{
-					var expandImg = document.getElementById("expandedImg");
-					var imgText = document.getElementById("imgText");
-					expandImg.src = imgs.alt;
-					expandImg.parentElement.style.display = "block";
-				}
-			</script> 
-		</figure>
+				<div class="container">
+					<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					<img id="expandedImg" style="width:100%">
+					<div id="imgText"></div>
+				</div>
+				<script>
+					function myFunction(imgs)	{
+						var expandImg = document.getElementById("expandedImg");
+						var imgText = document.getElementById("imgText");
+						expandImg.src = imgs.alt;
+						expandImg.parentElement.style.display = "block";
+					}
+				</script> 
+			</figure> -->
 
-		<article>
-			<h2>Portfolio</h2>
-			<!--<p>The above gallery shows some of the websites that I have designed as part of my time as domain services leader at ActivPC Technology Services. Please note that most of these utilize the WordPress Content Management System.</p>-->
-			<p>Listed below are projects that I work on in my spare time in order to learn more and keep my skills sharp:</p>
-			<ul id="projects">
+			<article>
+				<h2>Portfolio</h2>
 
-			</ul>	
-		</article>	
-	</main>
-	<script src="Scripts/projects.js"></script>       
-	<script type="text/javascript">
-		requestUserRepos();	
-	</script> 
-</body>
+				<p>Listed below are projects that I work on in my spare time in order to learn more and keep my skills sharp:</p>
+				<ul id="projects">
+
+				</ul>	
+			</article>	
+		</main>
+		<script src="Scripts/projects.js"></script>       
+		<script type="text/javascript">
+			requestUserRepos();	
+		</script> 
+	</body>
 </html>
